@@ -1,10 +1,15 @@
 fun main() {
+    basicFunction()
     println(birthdayGreeting(name = "Rover", age = 2))
     println(birthdayGreeting(age = 5, name = "Rex"))
     println(birthdayGreeting("Russ", 8))
     println(birthdayGreetingDefault(age = 2))
 }
 
+fun basicFunction() {
+	println("Happy Birthday, Rover!\nYou are now 2 years old!\n")
+}
+    
 fun birthdayGreeting(name: String, age: Int): String {
     val nameGreeting = "Happy Birthday, $name!"
     val ageGreeting = "You are now $age years old!"
